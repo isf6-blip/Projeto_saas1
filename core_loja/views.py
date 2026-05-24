@@ -87,5 +87,5 @@ from .models import Empresa
 
 def home(request):
     empresas = Empresa.objects.all()
-    return render(request, 'home.html', {'empresas': empresas})
+    return render(request, 'index.html', {'empresas': empresas})
 # Create your views here.
